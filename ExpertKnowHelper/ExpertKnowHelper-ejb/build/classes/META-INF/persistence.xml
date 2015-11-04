@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="ExpertKnowHelper-ejbPU" transaction-type="JTA">
+        <jta-data-source>jdbc/expert_know_helper_mysql</jta-data-source>
+        <class>br.com.expert.model.Base</class>
+        <class>br.com.expert.model.Conectivo</class>
+        <class>br.com.expert.model.Instancia</class>
+        <class>br.com.expert.model.ItemRegra</class>
+        <class>br.com.expert.model.Operador</class>
+        <class>br.com.expert.model.Regra</class>
+        <class>br.com.expert.model.Valor</class>
+        <class>br.com.expert.model.Variavel</class>
+        <class>br.com.expert.model.Grupousuarios</class>
+        <class>br.com.expert.model.Pessoa</class>
+        <class>br.com.expert.model.Usuario</class>
+        <class>br.com.expert.model.UsuarioGrupo</class>
+       
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        
+        <properties>
+        </properties>
+    </persistence-unit>
+</persistence>
